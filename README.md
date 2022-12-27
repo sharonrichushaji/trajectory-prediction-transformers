@@ -10,7 +10,7 @@ humans and forecasting their future steps.
 We implement the classical attention-based Transformer Network (TF) to predict the future trajectories of individuals in a scene. The project is inspired by the paper ["Transformer Networks for Trajectory Forecasting"](https://arxiv.org/abs/2003.08111). We build our model using different optimizer and scheduler techniques and analyze the one that gives us the best performance. We then perform extensive testing using the best model and present some quantitative and qualitative results. The results show that our best TF model is able to predict future pedestrian trajectories with an average error of ~45 cm.
 
  <p align="middle">
-   <img src="transformer_architecture.png" width=370 height=820 />
+   <img src="transformer_architecture.png" width=370 height=520 />
  </p>
 
 ## Dataset
@@ -20,9 +20,9 @@ We used the TrajNet dataset which is a superset of diverse datasets. Training on
 1. Create a \models folder in the working directory.
 2. Execute the train.py script. 
 
-or
+   or
 
-Run the trajectory-prediction.ipynb notebook.
+   Run the trajectory-prediction.ipynb notebook.
 
 The script/notebook will train the transformer model while performing validation after every epoch. It will save all the plots from the training and validation in the current working directory. This script also performs trajectory predictions after the model has been trained and saves the prediction plots.
 
@@ -36,10 +36,10 @@ The model gave us a Mean Average Displacement (MAD) Error of ~45 cm and Final Av
 <p align="middle">
     <img src="Results/mad.png" width=320 height=250 />
     <img src="Results/fad.png" width=320 height=250 />
-    <img src="Results/loss.png" width=320 height=250 /> 
+    <img src="Results/loss.png" width=350 height=265 /> 
   </p> 
 
-1. <ins>__Qualitative Results:__</ins>  
+2. <ins>__Qualitative Results:__</ins>  
 To further motivate the quantitative results presented above, we plot the predictions from the Transformer model along with the ground truth for a few randomly selected pedestrians 3. We also plot the observation points that the model uses to make the predictions. The results were quite impressive as we can see that the predictions closely follow the ground truth.
 
 <p align="middle">

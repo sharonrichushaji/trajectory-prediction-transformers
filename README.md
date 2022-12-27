@@ -10,7 +10,7 @@ humans and forecasting their future steps.
 We implement the classical attention-based Transformer Network (TF) to predict the future trajectories of individuals in a scene. The project is inspired by the paper ["Transformer Networks for Trajectory Forecasting"](https://arxiv.org/abs/2003.08111). We build our model using different optimizer and scheduler techniques and analyze the one that gives us the best performance. We then perform extensive testing using the best model and present some quantitative and qualitative results. The results show that our best TF model is able to predict future pedestrian trajectories with an average error of ~45 cm.
 
  <p align="middle">
-   <img src="transformer_architecture.png" width=370 height=520 />
+   <img src="transformer_architecture.png" width=400 height=520 />
  </p>
 
 ## Dataset
